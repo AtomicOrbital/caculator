@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input id="num1" type="number">
+        <input id="num2" type="number">
+        <br>
+        <button type="button" onclick="addition()">Addition(+)</button>
+        <button type="button" onclick="subtraction()">Subtraction(-)</button>
+        <button type="button" onclick="multiplication()">Multiplication(X)</button>
+        <button type="button" onclick="division()">Division(/)</button>  
+    </form>
+
+    <script>
+        function addition(){
+            let giatri1 = document.getElementById("num1").value
+            let giatri2 = document.getElementById("num2").value
+            let num1 = Number(giatri1);
+            let num2 = Number(giatri2);
+            let Addition = num1 + num2;
+
+            document.getElementById("result").innerHTML = "Result Addition:" + Addition;
+        }
+        function subtraction(){
+            let giatri1 = document.getElementById("num1").value
+            let giatri2 = document.getElementById("num2").value
+            let num1 = Number(giatri1);
+            let num2 = Number(giatri2);
+            let subtraction = num1 - num2;
+
+            document.getElementById("result").innerHTML = "Result subtraction:" + subtraction;
+        }
+        function multiplication(){
+            let giatri1 = document.getElementById("num1").value
+            let giatri2 = document.getElementById("num2").value
+            let num1 = Number(giatri1);
+            let num2 = Number(giatri2);
+            let multiplication = num1 * num2;
+
+            document.getElementById("result").innerHTML = "Result multiplication:" + multiplication;
+        }
+        function division(){
+            let giatri1 = document.getElementById("num1").value
+            let giatri2 = document.getElementById("num2").value
+            let num1 = Number(giatri1);
+            let num2 = Number(giatri2);
+            let division = num1 / num2;
+
+            document.getElementById("result").innerHTML = "Result division:" + division;
+        }
+    </script>
+    <p id="result"></p>
+</body>
+</html>
